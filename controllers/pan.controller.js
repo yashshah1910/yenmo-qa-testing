@@ -7,7 +7,7 @@ const validatePANHandler = (req, res) => {
   }
   res.status(200).send({
     message: "Success",
-    data: validatePAN(pan),
+    isValid: validatePAN(pan),
   });
 };
 
